@@ -3,10 +3,10 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/bureau-of-engraving-and-printing/refs/heads/main/apis.yml
 name: Bureau of Engraving and Printing
 tags:
-  - Federal Government
-  - Engraving
-  - Printing
   - Currency
+  - Engraving
+  - Federal Government
+  - Printing
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -23,8 +23,8 @@ apis:
   - aid: bureau-of-engraving-and-printing:bureau-of-engraving-and-printing
     name: Bureau of Engraving and Printing
     tags:
-      - Federal Government
       - Currency
+      - Federal Government
     humanURL: https://www.bep.gov/
     properties:
       - url: https://www.bep.gov/
