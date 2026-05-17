@@ -10,7 +10,7 @@ tags:
   - Printing
   - Security Printing
 type: Index
-x-type: government
+kind: government
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-11-25'
@@ -71,7 +71,7 @@ apis:
 common:
   - type: Website
     url: https://www.bep.gov/
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.bep.gov/privacy-policy
   - type: Data Portal
     url: https://catalog.data.gov/dataset?organization=bep-gov
