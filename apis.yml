@@ -69,6 +69,8 @@ apis:
       data about Federal Reserve Note printing. Data is available via data.gov
       for programmatic access.
 common:
+  - type: DomainSecurity
+    url: security/bureau-of-engraving-and-printing-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/bureau-of-engraving-and-printing
   - type: Website
