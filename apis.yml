@@ -5,6 +5,13 @@ name: Bureau of Engraving and Printing
 tags:
   - Currency
   - Engraving
+  - Federal-Government
+  - Money
+  - Printing
+  - Security Printing
+tags_raw:
+  - Currency
+  - Engraving
   - Federal Government
   - Money
   - Printing
@@ -40,6 +47,10 @@ apis:
     tags:
       - Accessibility
       - Currency
+      - Federal-Government
+    tags_raw:
+      - Accessibility
+      - Currency
       - Federal Government
     humanURL: https://www.bep.gov/currency/current-currency-features/uscurrency-reader-program
     properties:
@@ -52,6 +63,10 @@ apis:
   - aid: bureau-of-engraving-and-printing:bep-mutilated-currency-redemption
     name: BEP Mutilated Currency Redemption
     tags:
+      - Currency
+      - Federal-Government
+      - Redemptions
+    tags_raw:
       - Currency
       - Federal Government
       - Redemption
@@ -66,6 +81,11 @@ apis:
   - aid: bureau-of-engraving-and-printing:bep-data-catalog
     name: BEP Data and Publications
     tags:
+      - Currency
+      - Federal-Government
+      - Publications
+      - Statistics
+    tags_raw:
       - Currency
       - Federal Government
       - Publications
