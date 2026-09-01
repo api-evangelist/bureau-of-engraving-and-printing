@@ -76,7 +76,7 @@ apis:
     tags:
       - Currency
       - Federal-Government
-      - Redemption
+      - Redemptions
     tags_raw:
       - Currency
       - Federal Government
