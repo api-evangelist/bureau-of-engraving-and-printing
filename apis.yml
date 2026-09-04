@@ -45,7 +45,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bureau-of-
 access: 3rd-Party
 created: '2024-11-25'
 modified: '2026-04-21'
-position: Consumer
+position: Consuming
 description: >-
   The Bureau of Engraving and Printing (BEP) is an agency of the U.S.
   Department of the Treasury that designs and produces U.S. currency (Federal
