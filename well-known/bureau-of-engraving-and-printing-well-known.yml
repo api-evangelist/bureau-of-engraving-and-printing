@@ -1,0 +1,121 @@
+generated: '2026-09-05'
+method: probed
+source: live anonymous HTTPS probes of every Bureau of Engraving and Printing controlled host
+description: >-
+  Well-known document probe across every host the Bureau of Engraving and Printing
+  controls — the primary Drupal site www.bep.gov, its apex bep.gov, and the legacy
+  moneyfactory.gov domain the agency still owns. NOTHING was found. No RFC 9116
+  security.txt, no OpenID Connect discovery document, no OAuth authorization-server
+  metadata, no RFC 9727 api-catalog and no ai-plugin.json is served on any of them.
+  This file records a measured absence, not a finding — no WellKnown or SecurityTxt
+  pointer is wired into apis.yml, because BEP publishes none of these documents.
+note: >-
+  Two false-positive shapes were ruled out. (1) The apex bep.gov and both
+  moneyfactory.gov hosts answer EVERY path with a 302 to the site homepage, so a
+  redirect-following probe reads 200 + a 45KB HTML homepage for /.well-known/anything;
+  that is a catch-all redirect, not a document. (2) www.bep.gov returns a real 404
+  status but serves the full 25KB Drupal 404 page as the body for most paths. Only the
+  status codes below, captured WITHOUT following redirects, are the truth.
+hosts:
+  - host: www.bep.gov
+    note: Primary Drupal 10 site. Real 404 statuses; the body is the themed 404 page.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        content_type: text/html
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        content_type: text/html
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        content_type: text/html
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        content_type: text/html
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        content_type: text/html
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        content_type: text/html
+        file: null
+        note: A2A agent card probe (STEP 0b/4). Miss.
+      - path: /.well-known/agent.json
+        status: 404
+        content_type: text/html
+        file: null
+        note: Pre-0.3 legacy agent card path. Miss.
+      - path: /llms.txt
+        status: 404
+        content_type: text/html
+        file: null
+        note: Not a /.well-known path; probed in the same pass. BEP serves no llms.txt.
+  - host: bep.gov
+    note: >-
+      Apex. Catch-all 302 to https://www.bep.gov/ for every path probed — including
+      paths that do not exist. Treat every 200 seen through a redirect-following
+      client as a soft-404.
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+  - host: www.moneyfactory.gov
+    note: >-
+      Legacy BEP domain, still owned by the agency. Catch-all 302 to
+      https://www.bep.gov/ for every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+  - host: moneyfactory.gov
+    note: Apex of the legacy domain. 302 to https://www.moneyfactory.gov/ for every path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 302
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 302
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+        file: null
+      - path: /.well-known/api-catalog
+        status: 302
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 302
+        file: null
+hosts_probed: 4
+documents_found: 0
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,13 +1,13 @@
 specification: API Commons Plans
 specificationVersion: '0.1'
 schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+generated: '2026-09-05'
+method: searched
+source: https://www.bep.gov/services/currency-accessibility/us-currency-reader-program
 provider: Bureau of Engraving and Printing
 providerId: bureau-of-engraving-and-printing
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
+modified: '2026-09-05'
 tags:
   - Currency
   - Engraving
@@ -15,138 +15,51 @@ tags:
   - Money
   - Printing
   - Security Printing
-description: Machine-readable plans and pricing scaffold for this API provider. Conforms to the API Commons
-  Plans schema. Tier limits and prices are scaffold defaults; replace with provider-published values.
-plans:
-  - id: bureau-of-engraving-and-printing-free
-    name: Free
-    type: freemium
-    description: Free entry tier for the Bureau of Engraving and Printing API surface. Intended for evaluation,
-      prototyping, and low-volume integrations. Real limits and pricing must be reconciled with the provider's
-      published plan documentation.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota across all included endpoints
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 1000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the free tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 10
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-    elements:
-      - name: Public Documentation
-      - name: Community Support
-      - name: Sandbox Access
-      - name: BEP U.S. Currency Reader Program
-      - name: BEP Mutilated Currency Redemption
-      - name: BEP Data and Publications
-  - id: bureau-of-engraving-and-printing-pro
-    name: Professional
-    type: paid
-    description: Production tier for Bureau of Engraving and Printing. Provides higher quotas, priority
-      support, and access to the broader API portfolio. Pricing placeholder; align with the provider's
-      pricing page.
-    entries:
-      - label: API Requests
-        description: Monthly API request quota
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: 100000
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1
-        price: TBD
-        userMultiplied: false
-      - label: Rate Limit
-        description: Maximum requests per minute on the professional tier
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 100
-        timeFrame: minute
-        geo: global
-        domains: []
-        unit: 1
-        price: '0.00'
-        userMultiplied: false
-      - label: Overage
-        description: Per-request price after monthly quota is exceeded
-        name: overage
-        type: metered
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: global
-        domains: []
-        unit: 1000
-        price: TBD
-        userMultiplied: false
-    elements:
-      - name: All Production Endpoints
-      - name: Email Support
-      - name: SLA Targets
-      - name: Webhook Subscriptions
-      - name: BEP U.S. Currency Reader Program
-      - name: BEP Mutilated Currency Redemption
-      - name: BEP Data and Publications
-  - id: bureau-of-engraving-and-printing-enterprise
-    name: Enterprise
-    type: enterprise
-    description: Custom-negotiated tier for Bureau of Engraving and Printing. Includes dedicated capacity,
-      contractual SLAs, security review, data residency options, and named technical account management.
-    entries:
-      - label: API Requests
-        description: Negotiated request volume; -1 indicates uncapped subject to fair use
-        name: api_requests
-        type: quota
-        metric: requests
-        limit: -1
-        timeFrame: month
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-      - label: Rate Limit
-        description: Negotiated burst and steady-state rate
-        name: rate_limit
-        type: rate
-        metric: requests_per_minute
-        limit: 1000
-        timeFrame: minute
-        geo: configurable
-        domains: []
-        unit: 1
-        price: custom
-        userMultiplied: false
-    elements:
-      - name: Unlimited / Negotiated Volume
-      - name: 24/7 Dedicated Support
-      - name: Contractual SLA
-      - name: Security & Compliance Review
-      - name: Dedicated Account Manager
-      - name: Custom Data Residency
-      - name: BEP U.S. Currency Reader Program
-      - name: BEP Mutilated Currency Redemption
-      - name: BEP Data and Publications
+description: >-
+  The Bureau of Engraving and Printing publishes no API plans and no API pricing, because
+  it publishes no API. BEP is a U.S. Department of the Treasury manufacturing bureau: it
+  prints Federal Reserve notes and other government security documents. Its two public
+  services — the U.S. Currency Reader Program and Mutilated Currency Redemption — are
+  free-of-charge citizen services delivered by paper application and postal mail, not
+  metered API products. There is no developer portal, no sign-up, no tier, no quota and
+  no price on any BEP-controlled host. plan_count is 0 as a measured fact, not a gap.
+plan_count: 0
+plans: []
+access_model:
+  self_serve: false
+  free_tier: false
+  trial: false
+  public_signup: false
+  gate: none
+  onboarding: >-
+    Not applicable. The U.S. Currency Reader Program is requested with a paper/PDF
+    application form mailed to the National Library Service for the Blind and Print
+    Disabled; mutilated currency is redeemed by shipping the damaged notes to BEP's
+    Mutilated Currency Division. Both services are free to the citizen and neither is
+    programmatically accessible.
+  contact: https://www.bep.gov/contact-us
+notes:
+  - >-
+    This file previously carried a three-tier Free/Professional/Enterprise scaffold with
+    invented quotas (1,000 and 100,000 requests per month), invented rate ceilings and
+    TBD prices, written by the 2026-05-04 bulk sweep. BEP has never published any of it
+    and it has been removed.
+  - >-
+    BEP's only free-tier-shaped published artifacts are the EyeNote mobile apps for iOS
+    and Android — free end-user currency identifiers, not an API product with a plan.
+supersedes:
+  method: generated
+  date: '2026-05-04'
+  reason: Scaffold defaults replaced with a searched, honest zero.
+evidence:
+  - url: https://www.bep.gov/services/currency-accessibility/us-currency-reader-program
+    status: 200
+  - url: https://www.bep.gov/services/mutilated-currency-redemption
+    status: 200
+  - url: https://www.bep.gov/developers
+    status: 404
+  - url: https://www.bep.gov/api
+    status: 404
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
