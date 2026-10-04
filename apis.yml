@@ -5,7 +5,7 @@ name: Bureau of Engraving and Printing
 tags:
   - Currency
   - Engraving
-  - Federal-Government
+  - Federal Government
   - Money
   - Printing
   - Security Printing
@@ -16,6 +16,7 @@ tags_raw:
   - Money
   - Printing
   - Security Printing
+  - Federal-Government
 type: Index
 kind: government
 deliveryModel:
@@ -58,11 +59,12 @@ apis:
     tags:
       - Accessibility
       - Currency
-      - Federal-Government
+      - Federal Government
     tags_raw:
       - Accessibility
       - Currency
       - Federal Government
+      - Federal-Government
     humanURL: https://www.bep.gov/services/currency-accessibility/us-currency-reader-program
     properties:
       - url: https://www.bep.gov/services/currency-accessibility/us-currency-reader-program
@@ -75,12 +77,13 @@ apis:
     name: BEP Mutilated Currency Redemption
     tags:
       - Currency
-      - Federal-Government
+      - Federal Government
       - Redemptions
     tags_raw:
       - Currency
       - Federal Government
       - Redemption
+      - Federal-Government
     humanURL: https://www.bep.gov/services/mutilated-currency-redemption
     properties:
       - url: https://www.bep.gov/services/mutilated-currency-redemption
@@ -93,7 +96,7 @@ apis:
     name: BEP Data and Publications
     tags:
       - Currency
-      - Federal-Government
+      - Federal Government
       - Publications
       - Statistics
     tags_raw:
@@ -101,6 +104,7 @@ apis:
       - Federal Government
       - Publications
       - Statistics
+      - Federal-Government
     humanURL: https://www.bep.gov/currency
     properties:
       - url: https://www.bep.gov/currency
