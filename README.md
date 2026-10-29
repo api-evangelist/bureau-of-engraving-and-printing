@@ -1,4 +1,4 @@
-# Bureau of Engraving and Printing (bureau-of-engraving-and-printing)
+# Bureau of Engraving and Printing
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,58 +66,105 @@
 
 The Bureau of Engraving and Printing (BEP) is an agency of the U.S. Department of the Treasury that designs and produces U.S. currency (Federal Reserve Notes), postage stamps, and other official U.S. government security documents. BEP offers a U.S. Currency Reader Program for the visually impaired and provides a mutilated currency redemption service.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/bureau-of-engraving-and-printing/refs/heads/main/apis.yml)
+**Areas:** Currency · Engraving · Federal Government · Money · Printing · Security Printing
 
-## Scope
+## Bureau of Engraving and Printing on APIs.io
 
-- **Type:** Index
-- **x-type:** government
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Bureau of Engraving and Printing is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bureau-of-engraving-and-printing/](https://apis.io/providers/bureau-of-engraving-and-printing/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Currency
-- Engraving
-- Federal Government
-- Money
-- Printing
-- Security Printing
+- [BEP U.S. Currency Reader Program](https://apis.io/apis/bureau-of-engraving-and-printing/bep-currency-reader-program/) — The BEP U.S. Currency Reader Program provides free currency readers to blind and visually impaired individuals in the United States, enabling them to…
+- [BEP Mutilated Currency Redemption](https://apis.io/apis/bureau-of-engraving-and-printing/bep-mutilated-currency-redemption/) — The BEP redeems severely damaged or mutilated Federal Reserve Notes as a free public service. Citizens can submit damaged currency for examination and…
+- [BEP Data and Publications](https://apis.io/apis/bureau-of-engraving-and-printing/bep-data-catalog/) — BEP publishes currency production figures, annual reports, and historical data about Federal Reserve Note printing. Data is available via data.gov for…
 
-## APIs
+### Published properties
 
-### BEP U.S. Currency Reader Program
-The BEP U.S. Currency Reader Program provides free currency readers to blind and visually impaired individuals in the United States, enabling them to identify Federal Reserve Note denominations.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Human URL:** [https://www.bep.gov/currency/current-currency-features/uscurrency-reader-program](https://www.bep.gov/currency/current-currency-features/uscurrency-reader-program)
+#### Security (1)
 
-### BEP Mutilated Currency Redemption
-The BEP redeems severely damaged or mutilated Federal Reserve Notes as a free public service.
+Authentication, trust centre, and vulnerability disclosure.
 
-**Human URL:** [https://www.bep.gov/services/mutilated-currency-redemption](https://www.bep.gov/services/mutilated-currency-redemption)
+- [Bureau Of Engraving And Printing Domain Security](https://apis.io/security/bureau-of-engraving-and-printing/bureau-of-engraving-and-printing-domain-security/)
 
-### BEP Data and Publications
-BEP publishes currency production figures, annual reports, and historical data about Federal Reserve Note printing, available via data.gov.
+#### Plans and pricing (1)
 
-**Human URL:** [https://www.bep.gov/currency](https://www.bep.gov/currency)
+Published plans, tiers and prices.
 
-#### Properties
+- [Bureau Of Engraving And Printing Plans Pricing](https://apis.io/plans/bureau-of-engraving-and-printing/bureau-of-engraving-and-printing-plans-pricing/)
 
-- [DataAPI](https://catalog.data.gov/dataset?organization=bep-gov)
+#### Rate limits (1)
 
-## Common Properties
+Published request limits.
+
+- [Bureau Of Engraving And Printing Rate Limits](https://apis.io/rate-limits/bureau-of-engraving-and-printing/bureau-of-engraving-and-printing-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Bureau Of Engraving And Printing Finops](https://apis.io/finops/bureau-of-engraving-and-printing/bureau-of-engraving-and-printing-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.bep.gov/)
-- [Data Portal](https://catalog.data.gov/dataset?organization=bep-gov)
-- [Currency Features](https://www.bep.gov/currency/current-currency-features)
-- [About](https://www.bep.gov/about)
+- [Documentation](https://www.bep.gov/services)
+- [Support](https://www.bep.gov/contact-us)
+- [Blog](https://www.bep.gov/news/)
+- [Privacy policy](https://www.bep.gov/footer/privacy-policy)
 
-## Timestamps
+## API Evangelist rating
 
-- **Created:** 2024-11-25
-- **Modified:** 2026-04-21
+**Kin Score 12.6** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 10.5 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bureau-of-engraving-and-printing/](https://apis.io/providers/bureau-of-engraving-and-printing/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bureau of Engraving and Printing: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bureau-of-engraving-and-printing/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
